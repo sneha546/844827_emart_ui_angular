@@ -1,0 +1,54 @@
+<div class="container mx-5 my-5">
+  <div class="row content ">
+    <div class="col-sm-5 ">
+ 
+                    <img class="card-img-top "
+                        [src]="item.image"
+                        alt="item.name"
+                        style="width:300px">  
+            </div>
+     
+  
+
+    <div class="col-sm-7">
+       
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<div class="container ">
+      <h4><small>Product Details</small></h4>
+<hr>
+
+      <h2>{{item.name}}</h2>
+     <h3>{{item.price}}</h3>
+        
+<button type="button" class="btn btn-primary" (click)="addToCart(item.id)">Add to Cart</button>
+
+
+</div>
+
+ <div class="container-fluid ">
+<br>
+      <p class="text-left">{{item.description}}</p>
+        <br><br>
+      </div>
+
+      <h4 class="text-center">Leave a Review:</h4>
+      <form role="form">
+        <div class="form-group mx-5">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="col text-center"> 
+        <button type="submit" class="btn btn-success center-block">Submit</button>
+        </div>
+      </form>
+      <br><br>
+      
+</div>
+      
+
+    </div>
+  
+</div>
